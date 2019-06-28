@@ -2,6 +2,7 @@
 
 <manifest>
 	<remote name="github" fetch="git://github.com"/>
-	<project remote="github" name="LyzV/cprj" path="learn/cprj" revision="refs/tags/t1.1" />
+<!--	<project remote="github" name="LyzV/cprj" path="learn/cprj" revision="refs/tags/t1.1" />  -->
+	<project remote="main-branch" name="LyzV/cprj" path="learn/cprj" revision="refs/heads/master" />
 </manifest>
 
