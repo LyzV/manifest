@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<manifest>
+	<remote name="github" fetch="git://github.com"/>
+	<project remote="github" name="LyzV/cprj" path="learn/cprj" revision="refs/tags/t1.1" />
+</manifest>
+
