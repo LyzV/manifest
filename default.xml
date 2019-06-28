@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<!-- https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md -->
 <manifest>
+	<default remote="github" revision="refs/heads/master" />
 	<remote name="github" fetch="https://github.com/LyzV" pushurl="https://github.com/LyzV" />
-<!--	<project remote="github" name="cprj" path="learn/cprj" revision="refs/tags/t1.1" />  -->
-	<project remote="github" name="cprj" path="learn/cprj" revision="refs/heads/master" />
+	<project name="cprj" path="learn/cprj" />
+	<project name="git-how-to" path="learn/git-how-to" />
+<!--    <project remote="github" name="cprj" path="learn/cprj" revision="refs/tags/t1.1" />  -->
 </manifest>
 
 <!--
