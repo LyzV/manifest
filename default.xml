@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- https://gerrit.googlesource.com/git-repo/+/master/docs/manifest-format.md -->
+<!-- https://www.instructables.com/id/Using-Googles-repo-command-in-your-own-projects/ -->
 <manifest>
+	<!-- Значение аттрибутов по умолчанию -->
 	<default remote="github" revision="refs/heads/master" />
+	<!-- Настройка удалённого репозитария -->
 	<remote name="github" fetch="https://github.com/LyzV" pushurl="https://github.com/LyzV" />
+	<!-- Перечень проектов.
+		name - имя проекта в репозитории (будет https://github.com/LyzV/cprj)
+		path - имя папки куда будет скопирован проект
+		remote - путь к репозиторию (отсутсвует - будет взят из элемента default)
+		revision - ссылка на снэпшот (хэш или тэг)
+	-->
 	<project name="cprj" path="learn/cprj" />
 	<project name="git-how-to" path="learn/git-how-to" />
 <!--    <project remote="github" name="cprj" path="learn/cprj" revision="refs/tags/t1.1" />  -->
 </manifest>
 
-<!--
-<manifest>
-	<remote name="bitbucket" fetch="https://bitbucket.org"/>
-	<default revision="refs/heads/master" remote="bitbucket" sync-j="4"/>
-	<project name="miniat/0x1-miniat" remote="bitbucket" path="vm"/>
-	<project name="miniat/0x1-assembler" remote="bitbucket" path="assembler"/>
-	<project name="miniat/0x1-debugger" remote="bitbucket" path="debugger"/>
-	<project name="miniat/0x1-examples" remote="bitbucket" path="examples"/>
-	<project name="miniat/0x1-examples-asms-bins" remote="bitbucket" path="asms"/>
-</manifest>
--->
